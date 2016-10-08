@@ -1,6 +1,6 @@
 class CallbacksController < ApplicationController
   def github
-    @user = User.find_omniauth(request.env("omniauth.auth"))
+    @user = User.find_omniauth(request.env["omniauth.auth"])
     sign_in_and_redirect @user
   end
 end
