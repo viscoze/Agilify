@@ -10,10 +10,15 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+gem 'react-rails'
+
 gem 'devise'
+gem 'omniauth'
 gem 'omniauth-github'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  gem 'cucumber-rails', :require => false
   gem 'byebug', platform: :mri
 end
 
