@@ -7,6 +7,7 @@
 # Ignore bundler config.
 /.bundle
 /bin/*
+config/environment_variables.yml
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
