@@ -1,18 +1,19 @@
 class Api::GithubProjectsController < ApplicationController
-  def index
+  before_action :authenticate_user!
+
+  def index # get list of projects
+    render component: 'ProjectContainer'
   end
 
-  def create
+  def create  # add project
   end
 
-  def update
-  end
-
-  def destroy
+  def destroy # delete project
   end
 
   private
 
   def project_params
+    params.require(:github_project)
   end
 end

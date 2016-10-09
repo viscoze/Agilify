@@ -6,10 +6,15 @@ class User < ApplicationRecord
          :omniauthable, :omniauth_providers => [:github]
 
   def self.find_omniauth(auth)
+    puts "-"*50
+    puts auth
+    puts "-"*50
+
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.provider = auth.provider
       user.uid      = auth.uid
       user.email    = auth.info.email
+      user.nickname = auth.nickname
       user.password = Devise.friendly_token[0,20]
     end
   end
