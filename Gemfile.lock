@@ -81,6 +81,8 @@ GEM
       railties (>= 3, < 5.1)
     cucumber-wire (0.0.1)
     debug_inspector (0.0.2)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
     devise (4.2.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -94,6 +96,12 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
     gherkin (4.0.0)
+    github_api (0.14.5)
+      addressable (~> 2.4.0)
+      descendants_tracker (~> 0.0.4)
+      faraday (~> 0.8, < 0.10)
+      hashie (>= 3.4)
+      oauth2 (~> 1.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.4.6)
@@ -250,6 +258,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   cucumber-rails
   devise
+  github_api
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

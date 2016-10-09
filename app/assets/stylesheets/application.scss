@@ -1,0 +1,72 @@
+body {
+  background-color: #edeef0;
+  padding-top: 30px;
+}
+
+.container {
+  min-height: 700px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 70px;
+  border-bottom: 1px solid rgba(black, 0.3);
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  .logo {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgba(black, 0.7);
+  }
+
+  nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+    button {
+      outline: none;
+      text-decoration: none;
+      border: 1px solid rgba(blue, 0.6);
+      border-radius: 5px;
+      color: rgba(blue, 0.6);
+      background-color: white;
+    }
+
+    button.sign-out {
+      border: 1px solid rgba(red, 0.6);
+      color: rgba(red, 0.6);
+    }
+
+    a.sign-in {
+      display: inline-block;
+      padding: 5px;
+      font-size: 10px;
+      font-family: sans-serif;
+      font-weight: bolder;
+      text-transform: capitalize;
+      text-decoration: none;
+      border: 1px solid rgba(green, 0.6);
+      border-radius: 5px;
+      color: rgba(green, 0.6);
+      background-color: white;
+    }
+  }
+}
+
+div.description {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgba(black, 0.7);
+  padding: 50px;
+}
